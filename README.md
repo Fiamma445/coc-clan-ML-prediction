@@ -1,4 +1,4 @@
-﻿# Clash of Clans 클랜 데이터 분석 프로젝트 포트폴리오
+﻿# Clash of Clans 클랜 데이터 분석 프로젝트
 
 ## 요약 파트
 
