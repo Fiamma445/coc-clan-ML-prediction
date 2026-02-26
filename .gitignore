@@ -1,0 +1,23 @@
+# Environments
+.venv/
+.env
+
+# Large Data & Binaries (GitHub upload forbidden)
+data/
+*.zip
+*.mp4
+*.html
+*.pkl
+models/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Optional: uncomment if you want to track models
+# !models/
