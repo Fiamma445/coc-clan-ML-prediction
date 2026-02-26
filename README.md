@@ -2,12 +2,11 @@
 
 ## 요약 파트
 
-### Project 01
 ## Clash of Clans 클랜 데이터 기반 생존/리그 예측 모델
 
 ### 1. 프로젝트 개요
 **프로젝트 일정/인원**
-- 2026.01 / 5인 팀 프로젝트
+- 2026.01 / 4인 팀 프로젝트
 - 팀명: 파이브 가이즈(5팀)
 
 **문제 정의**
@@ -29,34 +28,7 @@
 - 직무적으로는 데이터 전처리, 불균형 대응, 모델링, 서비스화까지 End-to-End 경험을 확보했습니다.
 
 ### 3. 주요 액션(시스템 아키텍처)
-```text
-[data/coc_clans_dataset.csv]
-        |
-        v
-[데이터 로드/정제]
-  - 식별/텍스트 컬럼 제거
-  - 파생변수 생성(war_total, win_rate 등)
-        |
-        v
-[데이터 샘플링/분리]
-  - 유령 클랜 필터링
-  - 학습/검증 데이터 분리
-        |
-        v
-[모델 A: 생존 예측]      [모델 B: 리그 예측]
-  - LightGBM              - LightGBM/XGBoost
-  - 누수 점검             - RFE/RFECV
-                          - SMOTE/Optuna
-        |                        |
-        +-----------+------------+
-                    v
-          [models/ 하위로 저장]
-                    |
-                    v
-           [Streamlit src/app_unified.py]
-     - 생존 확률 예측
-     - 리그 예측 + 목표 티어 개선 가이드
-```
+![System Architecture](docs/image/System%20Architecture.png)
 
 ## 상세 파트
 
