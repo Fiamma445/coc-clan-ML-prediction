@@ -183,7 +183,7 @@
 
 ### 프로젝트 파일 및 실행법
 - 보고서(PDF)
-  - `docs/reports/결과보고서(클래시오브클랜 게임 데이터 분석).pdf`
+  - [결과보고서(클래시오브클랜 게임 데이터 분석).pdf](docs/reports/결과보고서(클래시오브클랜%20게임%20데이터%20분석).pdf)
 - 분석 노트북
   - `notebooks/01_EDA_Model_A.ipynb`
   - `notebooks/02_Modeling_Model_B.ipynb`
